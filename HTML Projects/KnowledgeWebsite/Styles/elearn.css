@@ -1,0 +1,10 @@
+.weblink:hover{
+    color:cornflowerblue;
+    
+}
+.weblink:visited{
+    color:blue;
+}
+.weblink:active{
+    color:darkorchid
+}
