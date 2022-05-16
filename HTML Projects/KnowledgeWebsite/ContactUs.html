@@ -29,15 +29,42 @@
             <section>
                 <h2>Contact Us</h2>
                 <br>
-                <form action="" method="GET">
+                <form action="https://httpbin.org/get" method="GET">
                     <fieldset>
                         <legend>Personal Details</legend>
+                        
                         <p>
                             <label for="FirstName">FirstName:</label>
                             <input type="text" name="FirstName" id="FirstName" placeholder="Thiru"
                             autocomplete="ON" required autofocus/>
                         </p>
+                        <p>
+                            <label for="LastName">LastName:</label>
+                            <input type="text" name="LastName" id="LastName" placeholder="Arasu"
+                            autocomplete="ON" required/>
+                        </p>
+                        <p>
+                            <label for="EmailId">Email:</label>
+                            <input type="email" name="EmailId" id="EmailId" placeholder="Thiru.Arasu@xxx.com"
+                            autocomplete="ON" required/>
+                        </p>
+                        <p>
+                            <label for="Password">Password:</label>
+                            <input type="password" name="Password" id="Password" autocomplete="ON" placeholder="Enter your Password" required/>
+                        </p>
+                        <p>
+                            <label for="Phone">Phone:</label>
+                            <input type="tel" name="Phone" id="Phone" placeholder="999-999-9999" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
+                        </p>
                     </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Send Me Your Message</legend>
+                        <textarea name="message" id="message" cols="40" rows="10" placeholder="Type your message here.."></textarea>
+                    </fieldset>
+                    <br>
+                    <button type="submit" formaction="http://www.google.com" formmethod="POST">Submit</button>
+                    <button type="reset">Reset</button>
                 </form>
             </section>
         </main>
